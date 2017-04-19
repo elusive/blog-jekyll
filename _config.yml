@@ -20,8 +20,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Also I will have my CV/Resume stored here as well so that it can be kept updated easily.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://elusive.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_username: elusive
+linkedin_username: johncgilliland
 twitter_username: johncgilliland
-github_username:  elusive
 
 # Build settings
 markdown: kramdown
