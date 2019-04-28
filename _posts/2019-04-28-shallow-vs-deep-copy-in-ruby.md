@@ -156,7 +156,7 @@ deep copy.
 
 #### References Used
 >[How to Make Deep Copies in Ruby](https://www.thoughtco.com/making-deep-copies-in-ruby-2907749) -- 
-[Michael Morin](https://www.thoughtco.com/michael-morin-bio-2907692)
+[Michael Morin](https://www.thoughtco.com/michael-morin-bio-2907692)  
 >[Making Deep Copies in Ruby](https://www.thoughtco.com/michael-morin-bio-2907692) -- 
 [r/ruby: bannister](https://www.reddit.com/user/banister)
 
