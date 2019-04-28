@@ -36,7 +36,7 @@ class Image
      end
      puts ""
 end
-{% end highlight %}
+{% endhighlight %}
 Usage of which is provided as part of the *make this code work* challenge. And the provided calls look like this:
 {% highlight ruby %}
 Image.new([
@@ -45,7 +45,7 @@ Image.new([
     [0,0,0,1],
     [0,0,0,1]
 ])
-{% end highlight %}
+{% endhighlight %}
 This call to the class constructor stores this 2D array in a class variable as shown, called `@values` and it
 is accessed when needed to display the data in the `output_image` method. Simple so far, but the challenge builds
 upon this with the next requirement.
@@ -78,7 +78,7 @@ array_one = [1,2,3]
 array_two = array_one
 array_two << 4
 array_one.inspect  # [1,2,3,4]
-{% end highlight %}
+{% endhighlight %}
 This example shows that you cannot do a simple value copy on an Array instance.  The reason for this is that an Array
 is a [reference object vs. a value object](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0) 
 and therefore the new variable in our example, `array_two` is pointing to a place in memory rather than holding the
@@ -92,6 +92,7 @@ array_two = array_one.dup
 array_one << 3
 array_one.inspect   # [1,2,3]
 array_two.inspect   # [1,2]
+{% endhighlight %}
 And you will see here that making a shallow copy of `array_one` into the `array_two` variable does in this case make
 a new copy of the object so that we can alter `array_one` by adding another value to it and then show that the copied
 `array_two` is not altered because it is its own object.
@@ -106,7 +107,7 @@ array_one = [ [1,2], [3,4] ]
 array_two = array_one.dup
 array_one[0] << 3
 array_two.inspect   #  [[1,2,3], [3,4]]
-{% end highlight %}
+{% endhighlight %}
 Now it is important to see that altering `array_one` still altered the *duplicated* `array_two` which is **NOT** the 
 behavior we want.  Because we used the `dup` method as in the previous example we expected our copy to remain 
 just that, its own copy. But because a shallow copy only duplicates the first layer of complexity we get a reference
@@ -148,7 +149,7 @@ class Image
      end
      puts ""
 end
-{% end highlight %}
+{% endhighlight %}
 Now our `Image` class is equipped with a deep copy that will work for whatever it is call upon. And furthermore
 because both the `dup` and `clone` methods call `initialize_copy` internally, they will both now perform the same
 deep copy.
