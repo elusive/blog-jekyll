@@ -33,4 +33,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-theme: "jekyll-whiteglass" 
+theme: "jekyll-theme-minimal" 
