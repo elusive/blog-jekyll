@@ -42,60 +42,60 @@ This led me to do some research.  The past couple of problems I have tackled wi
 </ol>
 With formulas for these two tasks I could then simply diff the result for my answer.  I have sample values from the problem statement to use in my unit tests of the formulas.  Here are the formulas I will use in solving the problem, both were readily available through Google or Wikipedia searches.
 
-[caption id="attachment_190" align="aligncenter" width="109"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/sumofintegersformula1.png"><img class="size-full wp-image-190 " title="Sum of Integers 1..n" alt="Sum of Integers" src="https://johngilliland.net/wp-content/uploads/2013/09/sumofintegersformula1.png" width="109" height="42" /></a> Sum of Integers[/caption]
+[caption id="attachment_190" align="aligncenter" width="109"]<a href="/assets/images/sumofintegersformula1.png"><img class="size-full wp-image-190 " title="Sum of Integers 1..n" alt="Sum of Integers" src="/assets/images/sumofintegersformula1.png" width="109" height="42" /></a> Sum of Integers[/caption]
 
-[caption id="attachment_191" align="aligncenter" width="180"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/sumofsquaresformula1.png"><img class="size-full wp-image-191 " alt="Sum of Squares" src="https://johngilliland.net/wp-content/uploads/2013/09/sumofsquaresformula1.png" width="180" height="45" /></a> Sum of Squares Identity[/caption]
+[caption id="attachment_191" align="aligncenter" width="180"]<a href="/assets/images/sumofsquaresformula1.png"><img class="size-full wp-image-191 " alt="Sum of Squares" src="/assets/images/sumofsquaresformula1.png" width="180" height="45" /></a> Sum of Squares Identity[/caption]
 <h2>The Test Class (and the first test)</h2>
 With test driven development, rather than writing some code for the problem first, of course I need to write a test.  So what test?  Well I look at the problem and see that I need to find the difference between the sum of the squares of a list of numbers and the square of the sum of those numbers.  Therefore I will need to be able to get those values.  My first test will be for a correct sum of squares value (the second formula above).
 
 I know that I am supposed to dive right in and write a test for a method that does what I need.  This is where you actually do some designing as well.  I wrote the following test as the first code for this problem:
 
-[caption id="attachment_196" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test12.png"><img class="size-medium wp-image-196" alt="Test for a sum of squares method" src="https://johngilliland.net/wp-content/uploads/2013/09/test12.png?w=300" width="300" height="185" /></a> Test for a sum of squares method[/caption]
+[caption id="attachment_196" align="aligncenter" width="300"]<a href="/assets/images/test12.png"><img class="size-medium wp-image-196" alt="Test for a sum of squares method" src="/assets/images/test12.png?w=300" width="300" height="185" /></a> Test for a sum of squares method[/caption]
 
 And here is the output for that test:
 
-[caption id="attachment_197" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test1-output2.png"><img class="size-medium wp-image-197" alt="Output from run of first test." src="https://johngilliland.net/wp-content/uploads/2013/09/test1-output2.png?w=300" width="300" height="118" /></a> Output from run of first test.[/caption]
+[caption id="attachment_197" align="aligncenter" width="300"]<a href="/assets/images/test1-output2.png"><img class="size-medium wp-image-197" alt="Output from run of first test." src="/assets/images/test1-output2.png?w=300" width="300" height="118" /></a> Output from run of first test.[/caption]
 
 As you can see the test failed with an 'ImportError:  No module named Problem6'.  That is because I need to add a module for Problem6, which is a new file named Problem6.py.  In order to maintain the strict tenets of test driven development I need to only to the minimum required to get past this error.  So I will add a new file/module named Problem6.py, and then re-run the test.  Here is the output from the next run:
 
-[caption id="attachment_198" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test1-output21.png"><img class="size-medium wp-image-198" alt="Output from 2nd test run" src="https://johngilliland.net/wp-content/uploads/2013/09/test1-output21.png?w=300" width="300" height="128" /></a> Output from 2nd test run[/caption]
+[caption id="attachment_198" align="aligncenter" width="300"]<a href="/assets/images/test1-output21.png"><img class="size-medium wp-image-198" alt="Output from 2nd test run" src="/assets/images/test1-output21.png?w=300" width="300" height="128" /></a> Output from 2nd test run[/caption]
 
 Now we failed with an AttributeError: 'module' object has no attribute 'Problem6Solution' and this is because the new module we just added is empty and has no class.  So, I will add a class to the module and name it 'Problem6Solution' and a method named sumOfSquares that accepts an input number.  This should be enough to get through this error.  Here is the first look at the solution class:
 
-[caption id="attachment_199" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/class1.png"><img class="size-medium wp-image-199" alt="Solution Class" src="https://johngilliland.net/wp-content/uploads/2013/09/class1.png?w=300" width="300" height="92" /></a> Solution Class[/caption]
+[caption id="attachment_199" align="aligncenter" width="300"]<a href="/assets/images/class1.png"><img class="size-medium wp-image-199" alt="Solution Class" src="/assets/images/class1.png?w=300" width="300" height="92" /></a> Solution Class[/caption]
 
 Now we can run the test again and see what we get this time.  It should be an assertion error because we are not yet performing the formula calculation.  Here is the result:
 
-[caption id="attachment_200" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test1-output3.png"><img class="size-medium wp-image-200" alt="Result from pass 3 of test 1" src="https://johngilliland.net/wp-content/uploads/2013/09/test1-output3.png?w=300" width="300" height="125" /></a> Result from pass 3 of test 1[/caption]
+[caption id="attachment_200" align="aligncenter" width="300"]<a href="/assets/images/test1-output3.png"><img class="size-medium wp-image-200" alt="Result from pass 3 of test 1" src="/assets/images/test1-output3.png?w=300" width="300" height="125" /></a> Result from pass 3 of test 1[/caption]
 
 Ah, there is my assertion error.  Now I am finally ready to add some code to execute the formula and hopefully pass the test.  The formula is simple but as I am a bit of a noobie with python I looked up the math.pow method to help me execute the power calls.  Here is the code for the sumOfSquares method complete:
 
-[caption id="attachment_201" align="aligncenter" width="248"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test1-output4.png"><img class="size-full wp-image-201" alt="Test1 - Passing!" src="https://johngilliland.net/wp-content/uploads/2013/09/test1-output4.png" width="248" height="126" /></a> Test1 - Passing![/caption]
+[caption id="attachment_201" align="aligncenter" width="248"]<a href="/assets/images/test1-output4.png"><img class="size-full wp-image-201" alt="Test1 - Passing!" src="/assets/images/test1-output4.png" width="248" height="126" /></a> Test1 - Passing![/caption]
 <h2>Repeat for Remaining Tests</h2>
 The rest of the process is a little smoother in that now we have our classes and files and beginnings completed.  We have a passing test and are under way!  The next test will be for another piece of our solution's puzzle, the square of sums formula, where we sum 1..n and then square the result.  We have the formula for summing 1..n so it should be fairly simple.  Let us see what the test looks like:
 
-[caption id="attachment_202" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test2.png"><img class="size-medium wp-image-202" alt="Test 2 for a square of sums method" src="https://johngilliland.net/wp-content/uploads/2013/09/test2.png?w=300" width="300" height="58" /></a> Test 2 for a square of sums method[/caption]
+[caption id="attachment_202" align="aligncenter" width="300"]<a href="/assets/images/test2.png"><img class="size-medium wp-image-202" alt="Test 2 for a square of sums method" src="/assets/images/test2.png?w=300" width="300" height="58" /></a> Test 2 for a square of sums method[/caption]
 
 Of course we will run the test without writing any new code to see it fail.  Then we will refactor until it passes.  I am seeing though, at this point that in writing a test first I am letting the desired output dictate the design of the class.  I am starting with what I need and only writing the minimum code in order to get it.  Resulting in a fairly concise bit of coding.  I am still only utilizing this at a very simple level, but I can see the benefits none the less.  What follows if the test result and the code written to make it pass:
 
-[caption id="attachment_203" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test2-output.png"><img class="size-medium wp-image-203" alt="Output from Test 2" src="https://johngilliland.net/wp-content/uploads/2013/09/test2-output.png?w=300" width="300" height="97" /></a> Output from Test 2[/caption]
+[caption id="attachment_203" align="aligncenter" width="300"]<a href="/assets/images/test2-output.png"><img class="size-medium wp-image-203" alt="Output from Test 2" src="/assets/images/test2-output.png?w=300" width="300" height="97" /></a> Output from Test 2[/caption]
 
-[caption id="attachment_204" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/class2.png"><img class="size-medium wp-image-204" alt="Square of Sums method" src="https://johngilliland.net/wp-content/uploads/2013/09/class2.png?w=300" width="300" height="60" /></a> Square of Sums method[/caption]
+[caption id="attachment_204" align="aligncenter" width="300"]<a href="/assets/images/class2.png"><img class="size-medium wp-image-204" alt="Square of Sums method" src="/assets/images/class2.png?w=300" width="300" height="60" /></a> Square of Sums method[/caption]
 
 And now our test 2 passes.
 
-[caption id="attachment_205" align="aligncenter" width="234"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/test2-output2.png"><img class="size-full wp-image-205" alt="Test 2 - Passing!" src="https://johngilliland.net/wp-content/uploads/2013/09/test2-output2.png" width="234" height="120" /></a> Test 2 - Passing![/caption]
+[caption id="attachment_205" align="aligncenter" width="234"]<a href="/assets/images/test2-output2.png"><img class="size-full wp-image-205" alt="Test 2 - Passing!" src="/assets/images/test2-output2.png" width="234" height="120" /></a> Test 2 - Passing![/caption]
 
 For the last test, where we test a solve method that takes the difference of our two sums, I will show the resulting classes in their entirety.  You will notice there will now be a third test and a third method in the solution class, called 'solve'.
 
-[caption id="attachment_206" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/testclass.png"><img class="size-medium wp-image-206" alt="The complete test class" src="https://johngilliland.net/wp-content/uploads/2013/09/testclass.png?w=300" width="300" height="223" /></a> The complete test class[/caption]
+[caption id="attachment_206" align="aligncenter" width="300"]<a href="/assets/images/testclass.png"><img class="size-medium wp-image-206" alt="The complete test class" src="/assets/images/testclass.png?w=300" width="300" height="223" /></a> The complete test class[/caption]
 
-[caption id="attachment_207" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/solutionclass.png"><img class="size-medium wp-image-207" alt="Complete solution class" src="https://johngilliland.net/wp-content/uploads/2013/09/solutionclass.png?w=300" width="300" height="288" /></a> Complete solution class[/caption]
+[caption id="attachment_207" align="aligncenter" width="300"]<a href="/assets/images/solutionclass.png"><img class="size-medium wp-image-207" alt="Complete solution class" src="/assets/images/solutionclass.png?w=300" width="300" height="288" /></a> Complete solution class[/caption]
 <h2>Summary</h2>
 I have added a main method at the end of the solution class that actually shows the answer and the elapsed time to calculate it.  That, in my mind, makes this a complete solution that does provide the output desired.  And, thanks to Test Driven Development, without anything extra.  Of course I could further refactor the formula methods to shorten them, specifically using the sum() method rather than the += operator.  However, I have left the code the way it is because I feel it is more readable this way.  And in my book, readability counts for something.
 
 Lastly here is the output, both the passing tests and the printed answer!
 
-[caption id="attachment_209" align="aligncenter" width="300"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/testclass-output.png"><img class="size-medium wp-image-209" alt="All Tests Passing!" src="https://johngilliland.net/wp-content/uploads/2013/09/testclass-output.png?w=300" width="300" height="68" /></a> All Tests Passing![/caption]
+[caption id="attachment_209" align="aligncenter" width="300"]<a href="/assets/images/testclass-output.png"><img class="size-medium wp-image-209" alt="All Tests Passing!" src="/assets/images/testclass-output.png?w=300" width="300" height="68" /></a> All Tests Passing![/caption]
 
-[caption id="attachment_210" align="aligncenter" width="217"]<a href="https://johngilliland.net/wp-content/uploads/2013/09/solution-output.png"><img class="size-full wp-image-210" alt="Results!" src="https://johngilliland.net/wp-content/uploads/2013/09/solution-output.png" width="217" height="76" /></a> Results![/caption]
+[caption id="attachment_210" align="aligncenter" width="217"]<a href="/assets/images/solution-output.png"><img class="size-full wp-image-210" alt="Results!" src="/assets/images/solution-output.png" width="217" height="76" /></a> Results![/caption]

@@ -44,7 +44,7 @@ tags:
 
 <p>I did some research on VIM and found out that I needed to add a ~_vimrc file with some settings in it.&#160; Over the next day or two I slowly acquired a pretty good selection of customizations for VIM that make it much nicer to use.&#160; Things like syntax highlighting and default font and color scheme presets.&#160; One of the coolest things I figured out from this wonderful article, <a href="http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide" target="_blank">Turning VIM into a modern Python IDE</a>, which gave me numerous tips, was to use the vertical screen split to show two buffers (files being edited) at once.&#160; This allowed me to work on my class in on one side and my unit tests on the other.&#160; Like so:</p>
 
-<p><a href="https://johngilliland.net/wp-content/uploads/2013/08/vim_split_screen.png"><img title="vim_split_screen" style="border-top:0;border-right:0;background-image:none;border-bottom:0;padding-top:0;padding-left:0;border-left:0;display:inline;padding-right:0;" border="0" alt="vim_split_screen" src="https://johngilliland.net/wp-content/uploads/2013/08/vim_split_screen_thumb.png" width="653" height="384" /></a></p>
+<p><a href="/assets/images/2013/08/vim_split_screen.png"><img title="vim_split_screen" style="border-top:0;border-right:0;background-image:none;border-bottom:0;padding-top:0;padding-left:0;border-left:0;display:inline;padding-right:0;" border="0" alt="vim_split_screen" src="/assets/images/2013/08/vim_split_screen_thumb.png" width="653" height="384" /></a></p>
 
 <p>Once I had this setup I was rolling pretty good, really helped with the TDD workflow of:</p>
 
@@ -58,7 +58,7 @@ tags:
 
 <p>This was also aided by the VIM settings for executing my scripts using the python command and seeing the output in a new command window.&#160; The following additions to my _vimrc file allow me to simply hit ‘F5’ to execute the code in the current buffer.&#160; And, conveniently, the *.py filter ensures that it is only set up to do so for Python files.&#160; These autocmd lines take advantage of the fact that you can execute any shell command from the VIM command line by prepending it with the ‘!’ character.&#160; The last setting maps the ‘F5’ key to the command output of “python “ + the current filename (represented by the ‘%’ output placeholder).&#160; Super convenient.</p>
 
-<p><a href="https://johngilliland.net/wp-content/uploads/2013/08/vim_settings.png"><img title="vim_settings" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="vim_settings" src="https://johngilliland.net/wp-content/uploads/2013/08/vim_settings_thumb.png" width="519" height="155" /></a></p>
+<p><a href="/assets/images/2013/08/vim_settings.png"><img title="vim_settings" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="vim_settings" src="/assets/images/2013/08/vim_settings_thumb.png" width="519" height="155" /></a></p>
 
 
 
@@ -90,7 +90,7 @@ tags:
 
 <p>Naturally this test failed when I ran it, so I had some code to write in my Problem4Solution class, which I needed to create as well.&#160; Here is a shot of what I ended up with for making the first test pass:</p>
 
-<p><a href="https://johngilliland.net/wp-content/uploads/2013/08/problem4_firstmethod.png"><img title="problem4_firstmethod" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="problem4_firstmethod" src="https://johngilliland.net/wp-content/uploads/2013/08/problem4_firstmethod_thumb.png" width="599" height="286" /></a></p>
+<p><a href="/assets/images/2013/08/problem4_firstmethod.png"><img title="problem4_firstmethod" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="problem4_firstmethod" src="/assets/images/2013/08/problem4_firstmethod_thumb.png" width="599" height="286" /></a></p>
 
 
 
@@ -98,7 +98,7 @@ tags:
 
 <p>Moving on to some product work, I knew I would want to test products that were produced from a loop, so I wrote a test called test_highestPalindromeProduct_ReturnsCorrect that would test a method that would take a starting number and multiply it by a set of numbers beginning with itself and stepping down by –1 until a palindrome product was found.&#160; Of course there was no such method so the test failed and I was back to my solution class to fix the problem.&#160; The resulting method, after a few tweaks and quick trips to the <a href="http://docs.python.org/2/index.html" target="_blank">python online docs</a> came out looking like this:</p>
 
-<p><a href="https://johngilliland.net/wp-content/uploads/2013/08/problem4_secondmethod.png"><img title="problem4_secondmethod" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="problem4_secondmethod" src="https://johngilliland.net/wp-content/uploads/2013/08/problem4_secondmethod_thumb.png" width="554" height="165" /></a></p>
+<p><a href="/assets/images/2013/08/problem4_secondmethod.png"><img title="problem4_secondmethod" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="problem4_secondmethod" src="/assets/images/2013/08/problem4_secondmethod_thumb.png" width="554" height="165" /></a></p>
 
 <p>I then added a test for a solve method that I figured would use the two helper methods and find my solution.&#160; But, before I finished that I realized that I might want to solve this problem for multiple length numbers.&#160; The sample given in the problem was for tow 2-digit numbers and the challenge was for two 3-digit numbers so right off I needed to handle multiple length start numbers (I was using the two 2-digit as test values because I already had the correct answer).&#160; Therefore I stepped back and wrote a test for a buildStartNumber method that would take a length up to 5 and return the highest number of that length.&#160; I wanted to get back 999 for an input of 3.&#160; Here is that test:</p>
 
@@ -158,10 +158,10 @@ tags:
 
 <p>And the code that I added to make the test pass:</p>
 
-<p><a href="https://johngilliland.net/wp-content/uploads/2013/08/problem4_solvemethod.png"><img title="problem4_solvemethod" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="problem4_solvemethod" src="https://johngilliland.net/wp-content/uploads/2013/08/problem4_solvemethod_thumb.png" width="567" height="327" /></a></p>
+<p><a href="/assets/images/2013/08/problem4_solvemethod.png"><img title="problem4_solvemethod" style="border-top:0;border-right:0;background-image:none;border-bottom:0;float:none;padding-top:0;padding-left:0;margin-left:auto;border-left:0;display:block;padding-right:0;margin-right:auto;" border="0" alt="problem4_solvemethod" src="/assets/images/2013/08/problem4_solvemethod_thumb.png" width="567" height="327" /></a></p>
 
 <p>This completed the problem.&#160; I submitted the solution, which thanks to my handy ‘F5’ key mapping was just a click away after adding a small main() method to the class that would print out the result of the solve method to the screen.&#160; The final output looked like this:</p>
 
-<p><a href="https://johngilliland.net/wp-content/uploads/2013/08/problem4_finaloutput.png"><img title="problem4_finaloutput" style="border-top:0;border-right:0;background-image:none;border-bottom:0;padding-top:0;padding-left:0;border-left:0;display:inline;padding-right:0;" border="0" alt="problem4_finaloutput" src="https://johngilliland.net/wp-content/uploads/2013/08/problem4_finaloutput_thumb.png" width="642" height="368" /></a></p>
+<p><a href="/assets/images/2013/08/problem4_finaloutput.png"><img title="problem4_finaloutput" style="border-top:0;border-right:0;background-image:none;border-bottom:0;padding-top:0;padding-left:0;border-left:0;display:inline;padding-right:0;" border="0" alt="problem4_finaloutput" src="/assets/images/2013/08/problem4_finaloutput_thumb.png" width="642" height="368" /></a></p>
 
 <p>And the answer you can see printed out as [993, 913, 906609], nice and neat.&#160; The final code is actually shown at the beginning of the post in the screen shot of VIM with the vertical split.&#160; You can see both the Problem4Solution class on the left and the TestProblem4Solution class on the right.&#160; If you have any questions just post a comment!</p>

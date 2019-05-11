@@ -56,11 +56,12 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.4.3)
   jekyll-feed (~> 0.6)
+  jekyll-paginate
   jekyll-theme-minimal
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.5.3p105
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
