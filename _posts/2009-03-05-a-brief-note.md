@@ -1,6 +1,6 @@
 ---
 id: 59
-title: 'A Brief Note&#8230;'
+title: 'A Brief Note'
 date: 2009-03-05T21:00:18-04:00
 author: John
 layout: post

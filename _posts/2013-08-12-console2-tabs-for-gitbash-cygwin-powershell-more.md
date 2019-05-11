@@ -48,7 +48,7 @@ To get a list of all of the packages you have installed use the command:
 <h2>Console2 Setup</h2>
 </div>
 <div>A new machine meant I had to do some reconfiguring of my utilities, especially the ones I use the most, like <a href="https://www.google.com/search?q=console2" target="_blank">Console2</a>, or just <a href="http://sourceforge.net/projects/console/" target="_blank">Console</a> now.  I have previously published an article that contained my Console2 Setup and it has been quite a popular article, my most popular one on the site in fact.  And when I had to figure out how to do it all again I  thought a new article would be a good idea.  Especially because I have added even more tabs to this setup.</div>
-<div><a href="http://www.johngilliland.net/assets/images/2013/11/image.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Console2 Tabs" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb.png" alt="Console2 Tabs screenshot" width="260" height="219" border="0" /></a>As you can see I have the following tabs available:</div>
+<div><a href="/assets/images/image.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Console2 Tabs" src="/assets/images/image_thumb.png" alt="Console2 Tabs screenshot" width="260" height="219" border="0" /></a>As you can see I have the following tabs available:</div>
 <ul>
 	<li>Windows Cmd Prompt</li>
 	<li>Visual Studio Cmd Prompt</li>
@@ -60,10 +60,10 @@ I was able to salvage some of my settings from my old hard drive by locating and
 <h3>Details</h3>
 Here are the specifics.  I am assuming that you know enough about Console to open the settings and add a new tab and get to this screen:
 
-<a href="http://www.johngilliland.net/assets/images/2013/11/image1.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Console2 Settings" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb1.png" alt="Console2 Settings Screenshot" width="254" height="260" border="0" /></a>
+<a href="/assets/images/image1.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Console2 Settings" src="/assets/images/image_thumb1.png" alt="Console2 Settings Screenshot" width="254" height="260" border="0" /></a>
 And here is the goodies!  A detailed list of the settings for each tab that work for me.  I add that caveat because due to the differences in versions of Windows and install locations I cannot swear that my settings will work for you, but you should be able to use my settings to figure out how to make yours work…
 <h5>Visual Studio Cmd Prompt</h5>
-<a href="http://www.johngilliland.net/assets/images/2013/11/image2.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="VS Cmd Prompt in Console 2" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb2.png" alt="VS Cmd Prompt in Console 2" width="260" height="105" border="0" /></a>
+<a href="/assets/images/image2.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="VS Cmd Prompt in Console 2" src="/assets/images/image_thumb2.png" alt="VS Cmd Prompt in Console 2" width="260" height="105" border="0" /></a>
 <ol>
 	<li><strong>Title:  </strong>VS Cmd</li>
 	<li><strong>Icon:  </strong>C:\Users\jgilliland\bin\Console2\vscommand.ico    (from <a title="Awesome Icons for Powershell and VS Cmd Prompt from Scott Hanselman" href="http://www.hanselman.com/blog/AwesomeVisualStudioCommandPromptAndPowerShellIconsWithOverlays.aspx" target="_blank" rel="Awesome Icons for Powershell and VS Cmd Prompt">Scott H.</a>)</li>
@@ -72,7 +72,7 @@ And here is the goodies!  A detailed list of the settings for each tab that wor
 </ol>
 <h5></h5>
 <h5>Git Bash Shell</h5>
-<a href="http://www.johngilliland.net/assets/images/2013/11/image3.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Git Bash in Console2 Screenshot" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb3.png" alt="Git Bash in Console2 Screenshot" width="260" height="132" border="0" /></a>
+<a href="/assets/images/image3.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Git Bash in Console2 Screenshot" src="/assets/images/image_thumb3.png" alt="Git Bash in Console2 Screenshot" width="260" height="132" border="0" /></a>
 <ol>
 	<li><strong>Title:  </strong>Git Bash</li>
 	<li><strong>Icon:</strong>  C:\Program Files (x86)\Git\etc\git.ico</li>
@@ -80,7 +80,7 @@ And here is the goodies!  A detailed list of the settings for each tab that wor
 	<li><strong>Startup dir:  </strong>%HOMEDRIVE%%HOMEPATH%</li>
 </ol>
 <h5>Cygwin Shell</h5>
-<a href="http://www.johngilliland.net/assets/images/2013/11/image4.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Cygwin in Console2 screenshot" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb4.png" alt="Cygwin in Console2 screenshot" width="260" height="166" border="0" /></a>
+<a href="/assets/images/image4.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Cygwin in Console2 screenshot" src="/assets/images/image_thumb4.png" alt="Cygwin in Console2 screenshot" width="260" height="166" border="0" /></a>
 <ol>
 	<li><strong>Title:  </strong>Cygwin</li>
 	<li><strong>Icon:  </strong>C:\users\jgilliland\bin\Cygwin\Cygwin.ico</li>
@@ -88,7 +88,7 @@ And here is the goodies!  A detailed list of the settings for each tab that wor
 	<li><strong>Startup dir:  </strong></li>
 </ol>
 <h5>Powershell</h5>
-<a href="http://www.johngilliland.net/assets/images/2013/11/image5.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Powershell in Console2 screenshot" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb5.png" alt="Powershell in Console2 screenshot" width="260" height="105" border="0" /></a>
+<a href="/assets/images/image5.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Powershell in Console2 screenshot" src="/assets/images/image_thumb5.png" alt="Powershell in Console2 screenshot" width="260" height="105" border="0" /></a>
 <ol>
 	<li><strong>Title:  </strong>Powershell</li>
 	<li><strong>Icon:  </strong>C:\Users\jgilliland\bin\Console2\vspowershell.ico  (from <a title="Awesome Icons for Powershell and VS Cmd Prompt from Scott Hanselman" href="http://www.hanselman.com/blog/AwesomeVisualStudioCommandPromptAndPowerShellIconsWithOverlays.aspx" target="_blank" rel="Awesome Icons for Powershell and VS Cmd Prompt">Scott H.</a>)</li>
@@ -98,6 +98,6 @@ And here is the goodies!  A detailed list of the settings for each tab that wor
 <h2>Conclusion</h2>
 So there you have it!  My new drive with all of my utilities, mostly portable installs this time, so that next time they can just be moved with me.  In fact, here is a screenshot of my username/bin directory where all of my portable installs are:
 
-<a href="http://www.johngilliland.net/assets/images/2013/11/image6.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Bin directory with portable installs for utils" src="http://www.johngilliland.net/assets/images/2013/11/image_thumb6.png" alt="My bin directory with portable installs" width="260" height="145" border="0" /></a>
+<a href="/assets/images/image6.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Bin directory with portable installs for utils" src="/assets/images/image_thumb6.png" alt="My bin directory with portable installs" width="260" height="145" border="0" /></a>
 
 In conclusion I am super stoked about my new ssd and I cannot recommend using <a href="http://chocolatey.org/" target="_blank">Chocolatey</a> enough for your windows package management needs.  And of course you now have all of the details of my Console2 setup.  Enjoy!

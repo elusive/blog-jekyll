@@ -1,6 +1,6 @@
 ---
 id: 86
-title: 'Still Walkin&#8217;'
+title: 'Still Walkin'
 date: 2011-10-20T09:40:15-04:00
 author: John
 layout: post
