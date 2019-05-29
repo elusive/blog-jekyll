@@ -2,6 +2,7 @@
 title: Settings for a Git-Bash Tab in ConsoleZ
 author: jogi
 date: 2017-03-27T12:49:37-04:00
+excerpt_separator: <p>I tried
 layout: post
 ---
 
