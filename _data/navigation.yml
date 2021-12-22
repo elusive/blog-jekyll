@@ -2,7 +2,7 @@
 # pages in order as they should show up.
 main:
   - title: "Resume"
-    url: https://johngilliland.net/resume/
+    url: https://elusive.github.io/resume/
   - title: "Archives"
     url: /archives/
   - title: "GitHub"
