@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Elusive Coding
-email: johngilliland@me.com
+email: email@johng.info
 author: John C. Gilliland
 description: > # this means to ignore newlines until "baseurl:"
   This is a website for serving content related to my github repositories and projects.
   Also I may post the occasional personal anecdote, because who doesn't like to do that?
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://elusive.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://johng.info/blog" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username: elusive
 linkedin_username: johncgilliland
